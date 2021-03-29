@@ -2,7 +2,7 @@
 
 ## Project Type
 
-Simulation using Julia
+Simulation/Analysis/Learning Resources using Julia (might do this through the lens of an ICO since that would get folks interested, but still TBD till I learn more in lecture)
 
 ## Main Project Idea
 
