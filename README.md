@@ -1,35 +1,49 @@
 # Learn BlockChain with Julia 
 
-## Project Type
+## Installation
 
-Simulation/Analysis/Learning Resources using Julia (might do this through the lens of an ICO since that would get folks interested, but still TBD till I learn more in lecture)
+Go to https://Julialang.org and download Julia.
 
-## Main Project Idea
+Enter the package manager in the Julia Repl by typing "]" without the quotes. Then do
 
-Build a well designed set of materials so people can learn the basics of blockchain with Julia. The motivation for this is that personally, I feel like I am still shaky on the fundmentals of Blockchain and I hope that this process will help me solidify my understanding. 
+```julia
+(@v1.6) pkg> add IJulia
+# Will give you the ability to run Julia in Jupyter
 
-I plan to build out some basic simulations along with video demos to help folks learn the basics of blockchain. Part of my idea is to also shed light on some painpoints for blockchain development with Julia if any come up. 
+(@v1.6) pkg> add ECC
+(@v1.6) pkg> add SHA
+(@v1.6) pkg> add Nettle
+(@v1.6) pkg> add IJulia
+(@v1.6) pkg> add Web3
 
-## Potential Market
+```
 
-I think there is a growing Julia community who would love to see an analysis and some intro materials on Blockchain in Julia. I may uncover that the language is not well suited for this development which in that case I will share the findings. 
+Note that Web3 might have some issues being installed (I had issues on my local machine). To resolve those, I had to do:
 
-## Workflow
+```julia
+(@v1.6) pkg> add JSON
+(@v1.6) pkg> add HTTP
+(@v1.6) pkg> remove Web3
+(@v1.6) pkg> add Web3
+```
+and that did the trick.
 
-I will be using the Julia programming language. I plan to leverage: https://github.com/lambda-mechanics/Web3.jl and some other basic Julia Blockchain packages to build out basic blockchain examples. 
+## Future work
 
-## Last Mile
+I will likely make modifications to these notebooks as I go through the docs process and create a video explanation. I also plan to attempt and add an Account Registry to make the simulation more complete.
 
-I do not believe this applies in my case. 
+## Open Source Contributions For This Project
 
-## Scale
+- https://stackoverflow.com/questions/67267644/how-to-generate-a-random-hexadecimal-string-in-julia/67267984#67267984
+- https://stackoverflow.com/questions/67249419/generate-a-public-private-key-pair-in-julia
+- https://github.com/danielsuo/Crypto.jl/pull/43
+- https://github.com/JuliaCrypto/SHA.jl/pull/65
+- https://github.com/JuliaCrypto/OpenSSH.jl/issues/4
+- https://github.com/lambda-mechanics/Web3.jl/issues/8
+- https://github.com/lambda-mechanics/Web3.jl/issues/7
+- https://gitlab.com/braneproject/ECC.jl/-/issues/8
+- https://gitlab.com/braneproject/ECC.jl/-/issues/7
+- https://gitlab.com/braneproject/ECC.jl/-/issues/6
+- https://gitlab.com/braneproject/ECC.jl/-/merge_requests/2
 
-Given the nature of building intro materials using the existing Julia blockchain materials, I don't think this will come into play. 
-
-## Fraud 
-
-Julia has shared global states which can allow for fraud. I intent to look into this in my materials/analysis but am not a language design expert so may not get a good analysis of this part. 
-
-## My idea without the Blockchain 
-
-Not applicable. 
+and more! While these contributions are small, working on this project opened my eyes to how much work is still needed on many fronts to get the Julia Ecosystem to be part of a fruitful blockchain future.
