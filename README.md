@@ -1,5 +1,9 @@
 # Learn BlockChain with Julia 
 
+## Overview video
+
+Here it is: https://www.youtube.com/watch?v=bF3QBwAiP8w
+
 ## Installation
 
 Go to https://Julialang.org and download Julia.
