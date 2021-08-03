@@ -2,7 +2,7 @@
 
 ## Overview video
 
-Here it is: https://www.youtube.com/watch?v=bF3QBwAiP8w
+Here it is: https://www.youtube.com/watch?v=eDELq53TpNc
 
 ## Installation
 
