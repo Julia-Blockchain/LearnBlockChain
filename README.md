@@ -1,5 +1,8 @@
 # Learn BlockChain with Julia 
 
+![Julia Blockchain Icon](https://user-images.githubusercontent.com/35577566/131148961-32b14089-dba0-48c2-8a11-14f607d742ee.png)
+
+
 ## Overview video
 
 Here it is: https://www.youtube.com/watch?v=eDELq53TpNc
